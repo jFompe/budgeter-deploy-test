@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "publish": "git add dist && cd .. && git commit -m \"Update deployment\" && git subtree push --prefix front/dist origin gh-pages",
     "preview": "vite preview",
     "lint": "eslint . --fix --ignore-path .gitignore"
   },
@@ -24,7 +25,6 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-vue": "^9.22.0",
     "sass": "^1.71.1",
-    "unplugin-fonts": "^1.1.1",
     "unplugin-vue-components": "^0.26.0",
     "unplugin-vue-router": "^0.8.4",
     "vite": "^5.2.11",
