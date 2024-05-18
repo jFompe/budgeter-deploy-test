@@ -11,9 +11,6 @@ import { fileURLToPath, URL } from 'node:url'
 // https://vitejs.dev/config/
 export default defineConfig({
   base: "/budgeter/",
-  build: {
-    target: 'chrome125'
-  },
   plugins: [
     VueRouter(),
     Vue({
